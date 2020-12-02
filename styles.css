@@ -45,7 +45,7 @@ body{
     color: hsl(228, 34%, 66%);
 }
 .button-container{
-    min-width: 108px;
+    min-width: 124px;
     width: 8%;
     /*background-color: rgba(0,0,0,0.1);*/
     display: flex;
@@ -284,6 +284,9 @@ input:checked + .slider::before{
 .card-container.dark:hover{
     background-color: hsl(228, 28%, 30%);
 }
+.attribution.dark{
+    color: white;
+}
 
 @media(max-width: 820px)
 {
@@ -292,6 +295,10 @@ input:checked + .slider::before{
         height: 100%;
         min-height: 100%;
         padding-bottom: 1vh;
+        background-size: 100% 8%;
+    }
+    .supreme-container.dark{
+        background-size: 100% 8%;
     }
     .main-container{
         grid-template-rows: 2fr 3fr;
@@ -362,6 +369,11 @@ input:checked + .slider::before{
     }
     .attribution{
         width: 100%;
+    }
+}
+@media(max-height: 690px) and (min-width: 820px){
+    .followers-total-number{
+        font-size: 2.5rem;
     }
 }
 @media(max-width: 400px)
