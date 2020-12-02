@@ -3,3 +3,374 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.supreme-container{
+    min-width: 100vw;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 3vh;
+    background-image: linear-gradient(hsl(225, 100%, 98%),hsl(225, 100%, 98%));
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+}
+.main-container{
+    display: grid;
+    grid-template-rows: 48% 48%;
+    width: 90%;
+    min-height: 90vh;
+    height: 90%;
+    margin: 0 auto;
+    /*background-color: rgba(0,0,0,0.2);*/
+}
+.page-top-half{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.page-top-container{
+    /*background-color: rgba(0,0,150,0.2);*/
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+.small-header{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(228, 34%, 66%);
+}
+.button-container{
+    min-width: 108px;
+    width: 8%;
+    /*background-color: rgba(0,0,0,0.1);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-title{
+    color: hsl(228, 34%, 66%);
+    font-size: 14px;
+}
+.main-row-container{
+    /*background-color: rgba(0,150,0,0.2);*/
+    display: flex;
+    justify-content: space-evenly;
+    height: 55%;
+}
+.main-row-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 22%;
+    padding-bottom: 2vh;
+}
+.fb-card .gradient-border-why{
+    width: 100%;
+    border-top: 6px solid hsl(208, 92%, 53%);
+}
+.twt-card .gradient-border-why{
+    width: 100%;
+    border-top: 6px solid hsl(203, 89%, 53%);
+}
+.insta-card .gradient-border-why{
+    width: 100%;
+    border-width: 3px;
+    border-style: solid;
+    border-image-source: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1;
+}
+.yt-card .gradient-border-why{
+    width: 100%;
+    border-top: 6px solid hsl(348, 97%, 39%);
+}
+.name-title{
+    /*background-color: rgba(0,0,0,0.1);*/
+    color: hsl(228, 34%, 66%);
+    margin-top: 3vh;
+    position: relative;
+}
+.name-title.fb::before{
+    content: url("./images/icon-facebook.svg");
+    position: absolute;
+    transform: translate(-150%, -10%);
+}
+.name-title.twt::before{
+    content: url("./images/icon-twitter.svg");
+    position: absolute;
+    transform: translate(-150%, -10%);
+}
+.name-title.insta::before{
+    content: url("./images/icon-instagram.svg");
+    position: absolute;
+    transform: translate(-150%, -10%);
+}
+.name-title.yt::before{
+    content: url("./images/icon-youtube.svg");
+    position: absolute;
+    transform: translate(-150%, -10%);
+}
+.followers-total-number{
+    font-size: 4rem;
+    margin-top: auto;
+    color: hsl(230, 17%, 14%);
+}
+.followers-text{
+    color: hsl(228, 34%, 66%);
+    margin-bottom: auto;
+    letter-spacing: 3px;
+}
+.followers-today-number{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: auto;
+}
+.more{
+    color: hsl(163, 72%, 41%);
+    position: relative;
+}
+.more::before{
+    content: url("./images/icon-up.svg");
+    position: absolute;
+    transform: translate(-170%, -15%);
+}
+.less{
+    color: hsl(356, 69%, 56%);
+}
+.less::before{
+    content: url("./images/icon-down.svg");
+    position: absolute;
+    transform: translate(-170%, -15%);
+}
+.card-container{
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 0.5rem;
+}
+.card-container:hover{
+    cursor: pointer;
+    background-color: hsl(227, 47%, 86%);
+}
+.overview-today-container{
+    /*background-color: rgba(150,0,0,0.2);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.second-grid{
+    /*background-color: rgba(0,0,0,0.1);*/
+    padding: 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+.second-grid-header{
+    padding: 0 2vw;
+    color: hsl(228, 34%, 66%);
+}
+.second-grid-card{
+    height: 90%;
+    width: 100%;
+    padding: 2vh 2vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+}
+.small-card-title{
+    /*background-color: rgba(0,0,0,0.1);*/
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/3;
+    align-self: start;
+}
+.small-card-title p{
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+}
+.small-card-number{
+    /*background-color: rgba(0,0,150,0.2);*/
+    color: hsl(230, 17%, 14%);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1vh;
+}
+.small-card-growth{
+    /*background-color: rgba(0,150,0,0.2);*/
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 1vh;
+}
+
+
+.switch{
+    display: inline-block;
+    width: 3rem;
+    height: 1.6rem;
+    position: relative;
+}
+.switch input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    border-radius: 12px;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 1.2rem;
+    height: 1.2rem;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+}
+input:checked + .slider::before{
+    transform: translateX(-1.4rem);
+    background-color: hsl(228, 28%, 20%);
+}
+
+
+.attribution{
+    position: absolute;
+    bottom: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.attribution a{
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+.attribution a:hover{
+    color: rgb(35, 114, 35);
+}
+
+
+.supreme-container.dark{
+    background-color: hsl(230, 17%, 13%);
+    background-image: linear-gradient(hsl(232, 19%, 15%),hsl(232, 19%, 15%));
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+}
+.card-container.dark{
+    background-color: hsl(228, 28%, 20%);
+}
+.big-header.dark, .small-card-number.dark, .followers-total-number.dark{
+    color: white;
+}
+.card-container.dark:hover{
+    background-color: hsl(228, 28%, 30%);
+}
+
+@media(max-width: 820px)
+{
+    .supreme-container{
+        min-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        padding-bottom: 1vh;
+    }
+    .main-container{
+        grid-template-rows: 2fr 3fr;
+        width: 60%;
+        min-width: 310px;
+    }
+    .page-top-half{
+        margin-bottom: 0;
+    }
+    .page-top-container{
+        /*background-color: rgba(0,0,150,0.2);*/
+        flex-direction: column;
+        padding-bottom: 1vh;
+    }
+    .big-header{
+        font-size: 1.5rem;
+    }
+    .button-container{
+        width: 100%;
+        margin-top: 1vh;
+        padding-top: 1vh;
+        border-top: 1px solid hsl(228, 34%, 66%);
+    }
+    .main-row-container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .main-row-card{
+        margin: 1vh 0;
+    }
+    .main-row-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        padding-bottom: 2vh;
+    }
+    .overview-today-container{
+        /*background-color: rgba(150,0,0,0.2);*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .second-grid-header{
+        padding: 0;
+    }
+    
+    .second-grid{
+        /*background-color: rgba(0,0,0,0.1);*/
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        width: 100%;
+        height: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+    }
+    .second-grid-card{
+        margin: 0vh 0;
+        width: 100%;
+    }
+    .small-card-title{
+        margin-top: 1vh;
+    }
+    .attribution{
+        width: 100%;
+    }
+}
+@media(max-width: 400px)
+{
+    .main-container{
+        width: 90%;
+        min-width: 200px;
+    }
+    .attribution{
+        width: 180px;
+    }
+}
